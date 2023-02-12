@@ -18,12 +18,12 @@ ansible-galaxy collection install azure.azcollection
 
 subscription_id=1897f09d-992e-4f7a-afe9-c4fcb921ab58
 client_id=b0a3683f-54d2-4068-8f55-113e5face312
-secret=
+secret=olU8Q~6QLbCFGrVj-nbzqu_~6CRiUS4wz8hpEcKR
 tenant=d9a4d782-a095-45e0-ae22-7bec820672af
 
 export AZURE_SUBSCRIPTION_ID=1897f09d-992e-4f7a-afe9-c4fcb921ab58
 export AZURE_CLIENT_ID=b0a3683f-54d2-4068-8f55-113e5face312
-export AZURE_SECRET=
+export AZURE_SECRET=olU8Q~6QLbCFGrVj-nbzqu_~6CRiUS4wz8hpEcKR
 export AZURE_TENANT=d9a4d782-a095-45e0-ae22-7bec820672af
 
 
