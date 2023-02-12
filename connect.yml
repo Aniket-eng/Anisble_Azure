@@ -1,0 +1,7 @@
+---
+-hosts: localhost
+	tasks:
+		- name: create rg
+		  azure_rm_resourcegroup:
+				name: rgs2
+				location: east us
