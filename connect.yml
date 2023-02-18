@@ -1,7 +1,8 @@
 ---
--hosts: localhost
-	tasks:
-		- name: create rg
-		  azure_rm_resourcegroup:
-				name: rgs2
-				location: east us
+
+- name: Using Azure collection
+  hosts: localhost
+  tasks:
+    - azure.azcollection.azure_rm_resourcegroup:
+            name: rgs2
+            location: eastus
