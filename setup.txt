@@ -1,9 +1,7 @@
 Ansible with Azure
 
 sudo apt update
-apt install python-pip
 
-*** IF NOT INSTALLED ******
 sudo apt install python-pip
 sudo apt install python3-pip
 
@@ -11,16 +9,10 @@ sudo apt install python3-pip
 
 python2 -m pip install --upgrade pip
 python3 -m pip install --upgrade pip
+
 pip3 install --upgrade --ignore-installed pip setuptools
 
-pip3 install ansible
-
-***  TRY  ***
-=======================================================
-   pip install 'ansible[azure]'
-   pip3 install .[azure]
-   ansible-galaxy collection install azure.azcollection
-   
+pip3 install ansible   
 
 
 
@@ -29,7 +21,8 @@ pip3 install ansible
 ***** WARNING: THE scripts are installed in 'YOURPATH' which is not in PATH
 =================================================================================
       echo $PATH
-      ADD PATH="YOURPATH/$PATH"  in .bashrc file located in (~/)   # ADDING path
+      ADD this -> PATH="$PATH:/YourPATH/"  in .bashrc file located in (~/)   # ADDING path
+      Reboot your System
       echo $PATH  => Check if its added or not
 
 
@@ -45,7 +38,6 @@ ansible-galaxy collection install azure.azcollection
     sudo vim crypto.py
     delete  CB_ISSUER_CHECK = _lib.X509_V_FLAG_CB_ISSUER_CHECK  from crypto.py THEN
     pip install --upgrade cryptography==36.0.2
-    ansible-galaxy collection install azure.azcollection
 
 
 pip3 install -r ~/.ansible/collections/ansible_collections/azure/azcollection/requirements-azure.txt
